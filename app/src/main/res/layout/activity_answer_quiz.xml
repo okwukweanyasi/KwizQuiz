@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1700a"
+    tools:context="com.example.android.kwizquiz.AnswerQuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/display_cand_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:paddingBottom="12dp"
+            android:text="@string/lbl_cand_name"
+            android:textColor="#00f"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_one"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/Q1checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q1_chbx1"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/Q1checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q1_chbx2"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/Q1checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q1_chbx3"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_two"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbnQ2Opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q2_rbn1"
+                android:textColor="#fff"
+                android:textColorLink="@color/colorAccent"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbnQ2Opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q2_rbn2"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+
+            <RadioButton
+                android:id="@+id/rbnQ2Opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/all_the_above"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+
+            <RadioButton
+                android:id="@+id/rbnQ2Opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/none_the_above"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_three"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_three_seq"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Q3EtAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="@string/q3_ans_hint"
+                android:inputType="textCapWords"
+                android:textColor="#fff"
+                android:textColorHint="#aaa"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q3EtCorrectAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textColorHint="#aaa"
+                android:visibility="invisible"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_four"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/Q4checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_chbx1"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+        <CheckBox
+            android:id="@+id/Q4checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_chbx2"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/Q4checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_chbx3"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+        <CheckBox
+            android:id="@+id/Q4checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4_chbx4"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+        <CheckBox
+            android:id="@+id/Q4checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_the_above"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+        <CheckBox
+            android:id="@+id/Q4checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none_the_above"
+            android:textColor="#fff"
+            app:buttonTint="@android:color/background_light"
+            app:buttonTintMode="src_in"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_five"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbnQ5Opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q5_rbn1"
+                android:textColor="#fff"
+                android:textColorLink="@color/colorAccent"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbnQ5Opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q5_rbn2"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+
+            <RadioButton
+                android:id="@+id/rbnQ5Opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q5_rbn3"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+
+            <RadioButton
+                android:id="@+id/rbnQ5Opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q5_rbn4"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp" />
+            <RadioButton
+                android:id="@+id/rbnQ5Opt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/none_the_above"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_six"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbnQ6Opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q6_rbn1"
+                android:textColor="#fff"
+                android:textColorLink="@color/colorAccent"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbnQ6Opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q6_rbn2"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbnQ6Opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/q6_rbn3"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp"  />
+
+            <RadioButton
+                android:id="@+id/rbnQ6Opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/none_the_above"
+                android:textColor="#fff"
+                app:buttonTint="@android:color/background_light"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmit"
+                android:text="Submit"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingTop="16dp"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

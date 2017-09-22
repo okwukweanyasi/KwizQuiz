@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Kwiz Quiz</string>
+
+    <!-- activity_main xml view -->
+    <string name="quiz_instructions">Answer all the questions on the following page.\n\nQuestions with multiple answers require you select all correct answers to score that question.
+        If you miss an option, the entire question is wrong.
+        Click on SUBMIT  when you are done answering all questions.
+        You wont be able to change your answers after submitting. Pass mark is 67% \n\n
+        Click \"Start\" to begin
+
+    </string>
+    <string name="txt_cand_name_hint">Enter Your Name</string>
+    <string name="lbl_cand_name">Candidate Name</string>
+
+    <!--activity Answer quiz-->
+    <!--general-->
+
+    <string name="all_the_above">All of the above</string>
+    <string name="none_the_above">None of the above</string>
+
+    <!-- Q1-->
+    <string name="quest_one">Q1. Which of these is correct about the number of months in a year?</string>
+    <string name="q1_chbx1">12 calender months make a year</string>
+    <string name="q1_chbx2">13 calender months make a leap year</string>
+    <string name="q1_chbx3">13 lunar months make a year</string>
+
+    <!-- Q2-->
+    <string name="quest_two">Q2. Which of the following is true of Australia</string>
+    <string name="q2_rbn1">It is a country</string>
+    <string name="q2_rbn2">It is a continent</string>
+
+    <!-- Q3-->
+    <string name="quest_three">Q3. Complete the sequence below</string>
+    <string name="quest_three_seq">Buy,Bought; Fight,Fought; Eat,Ate; Cut,</string>
+    <string name="q3_ans_hint">Past tense of Cut</string>
+
+    <!-- Q4-->
+    <string name="quest_four">Q4. Which of these books were not authored by John Grisham</string>
+    <string name="q4_chbx1">The Pelican Breif</string>
+    <string name="q4_chbx2">The Negotiator</string>
+    <string name="q4_chbx3">A Time to kill</string>
+    <string name="q4_chbx4">A Painted House</string>
+
+    <!-- Q5-->
+    <string name="quest_five">Q5. Which of the following is not a sport</string>
+    <string name="q5_rbn1">Egg rolling</string>
+    <string name="q5_rbn2">Chicken fight</string>
+    <string name="q5_rbn3">Volcano Surfing</string>
+    <string name="q5_rbn4">Pillow Fighting</string>
+
+    <!-- Q6-->
+    <string name="quest_six">Q6. The word \'laser\' is an acronym for which of these?</string>
+    <string name="q6_rbn1">Light acceleration by simple emission of radiation</string>
+    <string name="q6_rbn2">Light amplification by stimulated emission of radiation</string>
+    <string name="q6_rbn3">The word \'laser\' is not an acronym</string>
+
+    <!--AnswerQuiz Activity-->
+    <string name="q3_ans">cut</string>
+</resources>
